@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HMIDA Cart</title>
+    <link rel="icon" type="image/x-icon" href="Pics/HmidaLogo.PNG">
+    <link rel="stylesheet" href="Hmida.css">
+</head>
+<body>
+
+    <header>
+        <div class="header-div1">
+            <div class="header-div1-1">
+                <p class="logo">MR HMIDA</p>
+            </div>
+            <div class="header-div1-2"></div>
+        </div>
+        <div class="header-div2">
+            <div class="header-div2-1"></div>
+            <div class="header-div2-2">
+                <a href="index.html"><button class="header-button">Home</button></a>
+                <a href="products.html"><button class="header-button">Products</button></a>
+                <a href="contact.html"><button class="header-button">Contact</button></a>
+            </div>
+            <div class="header-div2-3">
+                <div class="search">
+                    <img src="Pics/search-icon.png" alt="search" class="search-icon">
+                </div>
+                <div class="cart-icon-div">
+                    <div class="cart-quantity js-cart-quantity"></div>
+                    <a href="cart.html"><img src="Pics/cart-icon.png" alt="cart" class="search-icon"></a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <div class="js-cart cart"></div>
+
+    <div class="order-Summary">
+        <p class="order-Summary-p" style="text-align: center;font-size: 25px;padding-right: 25px;">Order Summary:</p>
+        <div class="order-Summary-main-div">
+            <div class="order-Summary-inner-div">
+                <p class="js-items order-Summary-p">Items(0)</p>
+            </div>
+            <div class="order-Summary-inner-div">
+                <p class="js-price order-Summary-p">0</p>
+            </div>
+            <div class="order-Summary-inner-div">
+                <p class="order-Summary-p">Shipping & handling:</p>
+            </div>
+            <div class="order-Summary-inner-div">
+                <p class="js-shipping-and-handling order-Summary-p">0</p>
+            </div>
+            <div class="order-Summary-inner-div">
+                <p class="order-Summary-p">Total befor tax:</p>
+            </div>
+            <div class="order-Summary-inner-div">
+                <p class="js-price-before-tax order-Summary-p">0</p>
+            </div>
+            <div class="order-Summary-inner-div">
+                <p class="order-Summary-p">Estimated tax (10%):</p>
+            </div>
+            <div class="order-Summary-inner-div">
+                <p class="js-tax order-Summary-p">0</p>
+            </div>
+            <div style="height: 10px;display: flex;justify-content: center;align-items: center;padding-bottom: 20px;"><div style="height: 2px;background-color: white;flex: 1;"></div></div>
+            <div style="height: 10px;display: flex;justify-content: center;align-items: center;padding-right: 70px;padding-bottom: 20px;"><div style="height: 2px;background-color: white;flex: 1;"></div></div>
+            <div class="order-Summary-inner-div">
+                <p class="order-Summary-p">Order total:</p>
+            </div>
+            <div class="order-Summary-inner-div">
+                <p class="js-order-total order-Summary-p">0$</p>
+            </div>
+        </div>   
+        <div style="display: flex;margin-top: 10px;">
+            <div style="flex: 1;display: flex;justify-content: center;align-items: center;">
+                <div class="special-button-div-cart" style="margin-top: 30px;">
+                        <button class="special-button-cart">Place your order</button>
+                        <div class="special-button-animated-div-cart"></div>
+                        <div class="special-button-shadow-div-cart"></div>
+                        <div class="special-button-white-div-cart"></div>
+                </div>
+            </div>
+            <div style="flex: 1;display: flex;justify-content: center;align-items: center;"> 
+                <div class="special-button-div-cart" style="margin-top: 30px;">
+                        <button class="special-button-cart" onclick="resetCart();">Reset cart</button>
+                        <div class="special-button-animated-div-cart"></div>
+                        <div class="special-button-shadow-div-cart"></div>
+                        <div class="special-button-white-div-cart"></div>
+                </div>
+            </div>       
+        </div>
+    </div>
+
+    <div class="last-div">
+            <div class="d-71">
+                <div style="justify-content: start;">
+                    <p class="p8">Support</p>
+                </div>
+                <div style="display: flex;flex-direction: column;align-items: start;height: 250px;flex: unset;justify-content: start;">
+                    <a href="contact.html" class="p9">Contact</a>
+                    <p class="p9">My account</p>
+                    <p class="p9">Delevery</p>
+                    <p class="p9">FAQ</p>
+            </div>
+            </div>
+            <div class="d-71">
+                <div style="justify-content: start;">
+                    <p class="p8">About us</p>
+                </div>
+                <div style="display: flex;flex-direction: column;align-items: start;height: 250px;flex: unset;justify-content: start;">
+                    <p class="p9">Our store</p>
+                    <p class="p9">Our story</p>
+                    <p class="p9">Authenticity Products</p>
+                    <p class="p9">Loyalty</p>
+                    <p class="p9">Program Gift Card</p>
+                </div>                            
+            </div>
+            <div class="d-72">
+                <div class="d-721">
+                    <p class="p8">Log in to the website</p>
+                </div>
+                <div class="d-721">
+                    <input type="text" placeholder="Your email address" class="bar">
+                </div>
+                <div class="d-721">
+                    <p class="p9">Email address</p>
+                </div>
+                <div class="d-721">
+                    <input type="password" placeholder="Your password" class="bar">
+                </div>
+                <div class="d-721">
+                    <p class="p9">Password</p>
+                </div>
+                <div class="d-721" style="display: flex;justify-content: space-between;align-items: center;">
+                    <div style="display: flex;align-items: center;justify-content: start;padding-left: 5px;">
+                        <input type="checkbox">
+                        <p class="p9">Remember me</p>
+                    </div>
+                    <div class="">
+                        <p class="p9" style="color: rgb(0, 132, 255);">Forgot your password ?</p>
+                    </div>
+                </div>
+                <div class="">
+                    <div class="special-button-div" style="margin-top: 30px;">
+                            <button class="special-button">Sign in</button>
+                            <div class="special-button-animated-div"></div>
+                            <div class="special-button-shadow-div"></div>
+                            <div class="special-button-white-div"></div>
+                    </div>
+                </div>
+            </div>    
+    </div>
+
+
+    <script src="Hmida.js"></script>
+
+</body>
+</html>

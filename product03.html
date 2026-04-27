@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HMIDA pdt3</title>
+    <link rel="icon" type="image/x-icon" href="Pics/HmidaLogo.PNG">
+    <link rel="stylesheet" href="Hmida.css">
+</head>
+<body>
+    <header>
+        <div class="header-div1">
+            <div class="header-div1-1">
+                <p class="logo">MR HMIDA</p>
+            </div>
+            <div class="header-div1-2"></div>
+        </div>
+        <div class="header-div2">
+            <div class="header-div2-1"></div>
+            <div class="header-div2-2">
+                <a href="index.html"><button class="header-button">Home</button></a>
+                <a href="products.html"><button class="header-button">Products</button></a>
+                <a href="contact.html"><button class="header-button">Contact</button></a>
+            </div>
+            <div class="header-div2-3">
+                <div class="search">
+                    <img src="Pics/search-icon.png" alt="search" class="search-icon">
+                </div>
+                <div class="cart-icon-div">
+                    <div class="cart-quantity js-cart-quantity"></div>
+                    <a href="cart.html"><img src="Pics/cart-icon.png" alt="cart" class="search-icon"></a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <div class="pdt1-main">
+        <div class="pdt1-div1">
+            <button class="change-button" onclick="pdt03MinusOne();">&#60</button>
+            <div class="js-pdt03-pic-div pdt1-pic-div"></div>
+            <button class="change-button" onclick="pdt03PlusOne();">&#62</button>
+        </div>
+        <div class="pdt1-div2"> 
+            <p class="pdt1-div2-p1">HMIDA MR SIX SEVEN</p>
+            <p class="pdt1-div2-p1">black hoodie 02</p>
+            <p class="pdt1-div2-p2">9 900 DA</p>
+            <div>
+                <button class="js-size-XS size-button" onclick="selectSizeXS();">XS</button>
+                <button class="js-size-S size-button" onclick="selectSizeS();">S</button>
+                <button class="js-size-M size-button" onclick="selectSizeM();">M</button>
+                <button class="js-size-L size-button" onclick="selectSizeL();">L</button>
+                <button class="js-size-XL size-button" onclick="selectSizeXL();">XL</button>
+            </div> 
+            <p class="pdt1-div2-p2">Select the size</p>
+            <button class="add-button" style="margin-left: 15px;" onclick="addPdt03ToCart();">Add to cart</button>
+            <p class="js-warning warning"></p>
+        </div>
+    </div>
+
+    <script src="Hmida.js"></script>
+</body>
+</html>
