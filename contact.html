@@ -6,33 +6,42 @@
     <title>HMIDA Contact</title>
     <link rel="icon" type="image/x-icon" href="Pics/HmidaLogo.PNG">
     <link rel="stylesheet" href="Hmida.css">
+    <link rel="stylesheet" href="header.css">
+    <link rel="stylesheet" href="questions.css">
 </head>
 <body>
 
-    <header>
-        <div class="header-div1">
-            <div class="header-div1-1">
-                <p class="logo">MR HMIDA</p>
-            </div>
-            <div class="header-div1-2"></div>
-        </div>
-        <div class="header-div2">
-            <div class="header-div2-1"></div>
-            <div class="header-div2-2">
-                <a href="index.html"><button class="header-button">Home</button></a>
-                <a href="products.html"><button class="header-button">Products</button></a>
-                <a href="contact.html"><button class="header-button">Contact</button></a>
-            </div>
-            <div class="header-div2-3">
-                <div class="search">
-                    <img src="Pics/search-icon.png" alt="search" class="search-icon">
+    <header class="js-header">
+
+        <div class="header-main">
+            <div class="header-main-div1">
+                <div class="header-logo">
+                    <p class="p-logo">HMIDA LOGO</p>
                 </div>
-                <div class="cart-icon-div">
-                    <div class="cart-quantity js-cart-quantity"></div>
-                    <a href="cart.html"><img src="Pics/cart-icon.png" alt="cart" class="search-icon"></a>
-                </div>
+                <div class="header-div1-void"></div>
+            </div>
+            <div class="header-main-div2">
+                <div class="header-div2-void"></div>
+                <div class="header-buttons">
+                    <a href="index.html"><button class="header-button">Home</button></a>
+                    <a href="products.html"><button class="header-button">Products</button></a>
+                    <a href="contact.html"><button class="header-button">Contact</button></a>
+            </div>
+            <div class="search-cart">
+                    <button class="header-button"><img src="Pics/search-icon.png" alt="search" class="search-icon"></button>
+                    <button class="header-button"><a href="http://127.0.0.1:5501/cart.html"><img src="Pics/cart-icon.png" alt="cart" class="search-icon"></a></button>
+            </div>
+            <div class="header-menu">
+                <button class="menu-button" onclick="menu();"><img src="Pics/menu-icon.png" alt="Menu" class="hum-icon"></button>
+            </div>
             </div>
         </div>
+
+        <div class="div1"><a href="index.html"><button class="hum-menu-button">Home</button></a></div>
+        <div class="div1"><a href="products.html"><button class="hum-menu-button">Products</button></a></div>
+        <div class="div1"><a href="contact.html"><button class="hum-menu-button">Contact</button></a></div>
+        <div class="div1"><button class="hum-menu-button">Search</button></div>
+        
     </header>
 
     <main class="contact-main">
@@ -52,6 +61,57 @@
         <div class="contact">
             <div class="contact-div1">
                 <p class="questions">FAQ</p>
+                <div class="question-div">
+
+                    <div class="js-q1 q1">
+                        <p class="js-qst-p1 qst-p">Can I cancel my order?</p>
+                        <button class="js-q1-buttton q1-button q-effect">></button>
+                        <div class="answer-01">
+                            <p class="answer-p">Orders can only be canceled within 1 hour of placement. After this window, the order enters the fulfillment process and cannot be modified.</p>
+                        </div>
+                    </div>
+
+                    <div class="js-q2 q2">
+                        <p class="js-qst-p2 qst-p">What if my item arrives damaged?</p>
+                        <button class="js-q2-buttton q2-button q-effect">></button>
+                        <div class="answer-02">
+                            <p class="answer-p">If you receive a defective or incorrect item, please email us immediately with photos of the issue and your order number. We will prioritize a replacement or a full refund.</p>
+                        </div>
+                    </div>
+
+                    <div class="js-q3 q3">
+                        <p class="js-qst-p3 qst-p">Will the graphics fade?</p>
+                        <button class="js-q3-buttton q3-button q-effect">></button>
+                        <div class="answer-03">
+                            <p class="answer-p">We use high-quality printing and embroidery techniques designed to last. Following the care instructions above will ensure your pieces maintain their look for a long time.</p>
+                        </div>
+                    </div>
+
+                    <div class="js-q4 q4">
+                        <p class="js-qst-p4 qst-p">How should I wash my hoodies and sweatpants?</p>
+                        <button class="js-q4-buttton q4-button q-effect">></button>
+                        <div class="answer-04">
+                            <p class="answer-p">To preserve the quality and fit of our premium fabrics, we recommend washing items inside out in cold water. Always air dry or tumble dry on the lowest heat setting to prevent shrinkage and protect any graphics.</p>
+                        </div>
+                    </div>
+
+                    <div class="js-q5 q5">
+                        <p class="js-qst-p5 qst-p">What is your return policy?</p>
+                        <button class="js-q5-buttton q5-button q-effect">></button>
+                        <div class="answer-05">
+                            <p class="answer-p">We accept returns within 14 days of delivery. Items must be in their original, unworn condition with all tags attached. Please note that shipping costs for returns are the responsibility of the customer.</p>
+                        </div>
+                    </div>
+
+                    <div class="js-q6 q6">
+                        <p class="js-qst-p6 qst-p">How do I start a return or exchange?</p>
+                        <button class="js-q6-buttton q6-button q-effect">></button>
+                        <div class="answer-06">
+                            <p class="answer-p">To begin a return, please contact our support team with your order number. We will provide you with the necessary instructions and the return shipping address.</p>
+                        </div>
+                    </div>
+
+                </div>
             </div>
             <div class="contact-div2">
                 <p class="questions">Questions ?</p>
@@ -113,7 +173,7 @@
                     <a href="contact.html" class="p9">Contact</a>
                     <p class="p9">My account</p>
                     <p class="p9">Delevery</p>
-                    <p class="p9">FAQ</p>
+                    <a href="contact.html " class="p9">Contact</a>
             </div>
             </div>
             <div class="d-71">

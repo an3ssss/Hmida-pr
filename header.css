@@ -1,0 +1,200 @@
+header {
+    position: fixed;
+    top: 10px;
+    right: 10px;
+    left: 10px;
+    height: 80px;
+    background-color: black;
+    border-radius: 15px;
+    box-shadow: 0px 0px 55px black;
+    overflow: hidden;
+    transition: height 0.3s;
+    z-index: 100;
+}
+
+button {
+    cursor: pointer;
+}
+
+.header2 {
+    height: 290px;
+}
+
+.header-main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.header-main-div1 {
+    height: 80px;
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.header-logo {
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    flex: 2;
+    min-width: 200px;
+    padding-left: 20px;
+}
+
+.p-logo {
+    color: white;
+    font-size: 40px;
+    font-family: fantasy;
+    margin: 0px;
+}
+
+.header-div1-void {
+    flex: 3;
+}
+
+.header-main-div2 {
+    height: 80px;
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-right: 40px;
+}
+
+.header-div2-void {
+    height: 80px;
+    flex: 3;
+}
+
+.header-buttons {
+    height: 80px;
+    flex: 4;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 80px;
+}
+
+.search-cart {
+    width: 150px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 80px;
+
+}
+
+.header-menu {
+    width: 0px;
+    /*padding-right: 30px;*/
+}
+
+.menu-button {
+    width: 0px;
+    border: none;
+    transition: all 0.2s;
+}
+
+.menu-button:active {
+    scale: 0.9;
+}
+
+.header-button {
+    font-size: 17px;
+    color: rgba(255, 255, 255, 0.7);
+    width: 100px;
+    height: 80px;
+    background-color: transparent;
+    border: none;
+    margin: 3px;
+    background-color: transparent;
+    transition: all 0.2s;
+}
+
+.header-button:hover {
+    color: white;
+    text-shadow: 0px 0px 15px white;
+}
+
+.div1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.a1 {
+    flex: 1;
+   display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.hum-menu-button {
+    height: 50px;
+    flex: 1;
+    background-color: transparent;
+    border: none;
+    color: rgba(255, 255, 255, 0.7);
+    font-size: 17px;
+    transition: all 0.2s;
+}
+
+.hum-menu-button:hover {
+    color: white;
+    text-shadow: 0px 0px 15px white;
+}
+
+.search-icon {
+    width: 75%;
+}
+
+.hum-icon {
+    width: 0%;
+}
+
+.menu-button {
+    width: 90px;
+    border: none;
+    background-color: transparent;
+    width: 0%;
+}
+
+@media (max-width: 800px) {
+    .header-buttons {
+        flex: unset;
+        width: 0px;
+        overflow: hidden;
+    }
+    .search-cart {
+        flex: unset;
+        width: 0px;
+        overflow: hidden;
+    }
+    .header-menu {
+        width: 100px;
+        height: 80px;
+        padding-right: 0px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .menu-button {
+        width: 90px;
+        border: none;
+        background-color: transparent;
+    }
+    .hum-icon {
+        width: 60%;
+    }
+    .header-main-div2 {
+        padding-right: 0px;
+    }
+}
+
+@media (min-width: 800px) {
+    .header2 {
+        height: 80px;
+    }
+}

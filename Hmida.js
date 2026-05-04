@@ -1,3 +1,18 @@
+let headerChange = true;
+
+function menu() {
+    let header = document.querySelector('.js-header');
+    if (headerChange === true) {
+        header.classList.add('header2');
+        headerChange = false;
+    }
+    else if (headerChange === false) {
+        header.classList.remove('header2');
+        headerChange = true;
+    }
+    
+}
+
 let change = 1;
 
 try {
@@ -297,7 +312,7 @@ function renderTocart() {
                             <div class="cart-pdt-delivery-info">
                                 <p class="info">Wednesday, April 15</p>
                                 <p class="info">FREE Shipping</p>
-                                <button class="delete-button" onclick="cart.splice(${i}, 1); renderTocart(); localStorage.setItem('cart', JSON.stringify(cart)); renderCartQuantity(); updatOrderSummary();">Delete</button>
+                                <button class="delete-button" onclick="cart.splice(${i}, 1); renderTocart(); localStorage.setItem('cart', JSON.stringify(cart)); updatOrderSummary(); renderCartQuantity();">Delete</button>
                             </div>
                         </div>`;
             cartHtml += html;
@@ -326,7 +341,9 @@ function resetCart() {
     updatOrderSummary();
 }
 
-renderCartQuantity();
+
+// renderCartQuantity();
+
 
 function renderCartQuantity() {
     document.querySelector('.js-cart-quantity').innerHTML = cart.length;
@@ -373,6 +390,194 @@ let messageLength = document.querySelector('.js-message');
 function messageLengthCounter() {  
     document.querySelector('.js-lentgh-counter').innerHTML = `${messageLength.value.length}/300`;
 }
+
+let q1ButtonElement = document.querySelector('.js-q1-buttton');
+let q1Element = document.querySelector('.js-q1');
+let q1P = document.querySelector('.js-qst-p1');
+
+q1ButtonElement.addEventListener('click', () => {
+    showQst1();
+});
+
+let qst01 = true;
+
+function showQst1() {
+    if (qst01 === true) {
+        q1ButtonElement.classList.add('q1-button-after');
+        q1Element.classList.add('q1-after');
+        q1P.classList.add('qst-p-after');
+        qst01 = false;
+    }
+    else if (qst01 === false) {
+        q1ButtonElement.classList.remove('q1-button-after');
+        q1Element.classList.remove('q1-after');
+        q1P.classList.remove('qst-p-after');
+        qst01 = true;
+    }
+    
+}
+
+
+
+//OOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOO
+
+
+let q2ButtonElement = document.querySelector('.js-q2-buttton');
+let q2Element = document.querySelector('.js-q2');
+let q2P = document.querySelector('.js-qst-p2');
+
+q2ButtonElement.addEventListener('click', () => {
+    showQst2();
+});
+
+let qst02 = true;
+
+function showQst2() {
+    if (qst02 === true) {
+        q2ButtonElement.classList.add('q2-button-after');
+        q2Element.classList.add('q2-after');
+        q2P.classList.add('qst-p-after');
+        qst02 = false;
+    }
+    else if (qst02 === false) {
+        q2ButtonElement.classList.remove('q2-button-after');
+        q2Element.classList.remove('q2-after');
+        q2P.classList.remove('qst-p-after');
+        qst02 = true;
+    }
+    
+}
+
+
+
+//OOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOO
+
+
+
+let q3ButtonElement = document.querySelector('.js-q3-buttton');
+let q3Element = document.querySelector('.js-q3');
+let q3P = document.querySelector('.js-qst-p3');
+
+q3ButtonElement.addEventListener('click', () => {
+    showQst3();
+});
+
+let qst03 = true;
+
+function showQst3() {
+    if (qst03 === true) {
+        q3ButtonElement.classList.add('q3-button-after');
+        q3Element.classList.add('q3-after');
+        q3P.classList.add('qst-p-after');
+        qst03 = false;
+    }
+    else if (qst03 === false) {
+        q3ButtonElement.classList.remove('q3-button-after');
+        q3Element.classList.remove('q3-after');
+        q3P.classList.remove('qst-p-after');
+        qst03 = true;
+    }
+    
+}
+
+
+
+//OOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOO
+
+
+let q4ButtonElement = document.querySelector('.js-q4-buttton');
+let q4Element = document.querySelector('.js-q4');
+let q4P = document.querySelector('.js-qst-p4');
+
+q4ButtonElement.addEventListener('click', () => {
+    showQst4();
+});
+
+let qst04 = true;
+
+function showQst4() {
+    if (qst04 === true) {
+        q4ButtonElement.classList.add('q4-button-after');
+        q4Element.classList.add('q4-after');
+        q4P.classList.add('qst-p-after');
+        qst04 = false;
+    }
+    else if (qst04 === false) {
+        q4ButtonElement.classList.remove('q4-button-after');
+        q4Element.classList.remove('q4-after');
+        q4P.classList.remove('qst-p-after');
+        qst04 = true;
+    }
+    
+}
+
+
+
+//OOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOO
+
+
+
+let q5ButtonElement = document.querySelector('.js-q5-buttton');
+let q5Element = document.querySelector('.js-q5');
+let q5P = document.querySelector('.js-qst-p5');
+
+q5ButtonElement.addEventListener('click', () => {
+    showQst5();
+});
+
+let qst05 = true;
+
+function showQst5() {
+    if (qst05 === true) {
+        q5ButtonElement.classList.add('q5-button-after');
+        q5Element.classList.add('q5-after');
+        q5P.classList.add('qst-p-after');
+        qst05 = false;
+    }
+    else if (qst05 === false) {
+        q5ButtonElement.classList.remove('q5-button-after');
+        q5Element.classList.remove('q5-after');
+        q5P.classList.remove('qst-p-after');
+        qst05 = true;
+    }
+    
+}
+
+
+
+//OOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOO
+
+
+let q6ButtonElement = document.querySelector('.js-q6-buttton');
+let q6Element = document.querySelector('.js-q6');
+let q6P = document.querySelector('.js-qst-p6');
+
+q6ButtonElement.addEventListener('click', () => {
+    showQst6();
+});
+
+let qst06 = true;
+
+function showQst6() {
+    if (qst06 === true) {
+        q6ButtonElement.classList.add('q6-button-after');
+        q6Element.classList.add('q6-after');
+        q6P.classList.add('qst-p-after');
+        qst06 = false;
+    }
+    else if (qst06 === false) {
+        q6ButtonElement.classList.remove('q6-button-after');
+        q6Element.classList.remove('q6-after');
+        q6P.classList.remove('qst-p-after');
+        qst06 = true;
+    }
+    
+}
+
+
+
+//OOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOO
+
 
 
 

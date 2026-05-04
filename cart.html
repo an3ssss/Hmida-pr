@@ -6,33 +6,41 @@
     <title>HMIDA Cart</title>
     <link rel="icon" type="image/x-icon" href="Pics/HmidaLogo.PNG">
     <link rel="stylesheet" href="Hmida.css">
+    <link rel="stylesheet" href="header.css">
 </head>
 <body>
 
-    <header>
-        <div class="header-div1">
-            <div class="header-div1-1">
-                <p class="logo">MR HMIDA</p>
-            </div>
-            <div class="header-div1-2"></div>
-        </div>
-        <div class="header-div2">
-            <div class="header-div2-1"></div>
-            <div class="header-div2-2">
-                <a href="index.html"><button class="header-button">Home</button></a>
-                <a href="products.html"><button class="header-button">Products</button></a>
-                <a href="contact.html"><button class="header-button">Contact</button></a>
-            </div>
-            <div class="header-div2-3">
-                <div class="search">
-                    <img src="Pics/search-icon.png" alt="search" class="search-icon">
+   <header class="js-header">
+
+        <div class="header-main">
+            <div class="header-main-div1">
+                <div class="header-logo">
+                    <p class="p-logo">HMIDA LOGO</p>
                 </div>
-                <div class="cart-icon-div">
-                    <div class="cart-quantity js-cart-quantity"></div>
-                    <a href="cart.html"><img src="Pics/cart-icon.png" alt="cart" class="search-icon"></a>
-                </div>
+                <div class="header-div1-void"></div>
+            </div>
+            <div class="header-main-div2">
+                <div class="header-div2-void"></div>
+                <div class="header-buttons">
+                    <a href="index.html"><button class="header-button">Home</button></a>
+                    <a href="products.html"><button class="header-button">Products</button></a>
+                    <a href="contact.html"><button class="header-button">Contact</button></a>
+            </div>
+            <div class="search-cart">
+                    <button class="header-button"><img src="Pics/search-icon.png" alt="search" class="search-icon"></button>
+                   <button class="header-button"><a href="http://127.0.0.1:5501/cart.html"><img src="Pics/cart-icon.png" alt="cart" class="search-icon"></a></button>
+            </div>
+            <div class="header-menu">
+                <button class="menu-button" onclick="menu();"><img src="Pics/menu-icon.png" alt="Menu" class="hum-icon"></button>
+            </div>
             </div>
         </div>
+
+        <div class="div1"><a href="index.html"><button class="hum-menu-button">Home</button></a></div>
+        <div class="div1"><a href="products.html"><button class="hum-menu-button">Products</button></a></div>
+        <div class="div1"><a href="contact.html"><button class="hum-menu-button">Contact</button></a></div>
+        <div class="div1"><button class="hum-menu-button">Search</button></div>
+        
     </header>
 
     <div class="js-cart cart"></div>
@@ -102,7 +110,7 @@
                     <a href="contact.html" class="p9">Contact</a>
                     <p class="p9">My account</p>
                     <p class="p9">Delevery</p>
-                    <p class="p9">FAQ</p>
+                    <a href="contact.html " class="p9">Contact</a>
             </div>
             </div>
             <div class="d-71">
