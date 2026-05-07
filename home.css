@@ -1,0 +1,137 @@
+body {
+    padding-top: 100px;
+    padding-bottom: 1150px;
+    position: relative;
+    background-image: url(Pics/background1.png);
+}
+
+.main-home {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-right: 35px;
+}
+
+.main-div1 {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 600px;
+}
+
+.hmida-logo-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.hmida-logo {
+    width: 80%;
+}
+
+.explore-collection-button {
+    height: 50px;
+    width: 300px;
+    margin-top: 20px;
+    border-radius: 25px;
+    background-color: black;
+    color: rgba(255, 255, 255, 0.8);
+    border: none;
+    box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.5);
+    transition: all 0.2s;
+}
+
+.explore-collection-button:hover {
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.7);
+    color: white;
+}
+
+.explore-collection-button:active {
+    opacity: 0.9;
+    scale: 0.98;
+}
+
+.main-div2 {
+    flex: 1;
+    height: 600px;
+    padding-top: 20px;
+    padding-left: 20px;
+}
+
+.p1 {
+    color: black;
+    font-size: 75px;
+    font-family: fantasy;
+    margin: 0px;
+}
+
+.new-pdt-drp-main {
+    min-width: 330px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+.new-pdt-drp01 {
+    flex: 1;
+    height: 3px;
+    background-color: black;
+    border-radius: 50%;
+}
+
+.p2 {
+    color: black;
+    font-family: fantasy;
+    margin: 0px;
+    margin-right: 50px;
+    margin-left: 50px;
+    font-size: 20px; 
+}
+
+.new-pdt-drp02 {
+    flex: 1;
+    height: 3px;
+    background-color: black;
+    border-radius: 50%;
+}
+
+.main-div2-1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.main-div2-1-1 {
+    width: 170px;
+    height: 280px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 15px;
+    border: solid 2px black;
+    padding: 15px;
+    padding-bottom: 25px;
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.5);
+    transition: all 0.2s;
+}
+
+.main-div2-1-1:hover {
+    scale: 1.02;
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.7);
+}
+
+.main-div2-1-1:active {
+    scale: 0.98;
+}
+
+.p3 {
+    font-size: 19px;
+    font-family: arial;
+    color: black;
+    text-align: center;
+}

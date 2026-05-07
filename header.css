@@ -12,12 +12,21 @@ header {
     z-index: 100;
 }
 
+a {
+    text-decoration: none;
+    cursor: pointer;
+}
+
+p {
+    cursor: default;
+}
+
 button {
     cursor: pointer;
 }
 
 .header2 {
-    height: 290px;
+    height: 335px;
 }
 
 .header-main {
